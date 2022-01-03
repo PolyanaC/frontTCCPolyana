@@ -23,7 +23,7 @@ img{
 }
 
 .menu{
-    margin: 1rem auto 0 1rem;
+    margin: 1rem 0 0 1rem;
     color: white;
     background: linear-gradient(90deg, rgba(2,0,36,1) 5%, rgba(7,6,96,1) 100%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
 }
