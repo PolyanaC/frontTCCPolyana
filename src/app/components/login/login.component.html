@@ -25,7 +25,7 @@
             placeholder="Senha">
           </mat-form-field>  
 
-          <button [disabled]="!validaCampos()" class="full-width mat-elevation-z4 button-login" mat-flat-button color="primary">Entrar</button>
+          <button (click)="logar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4 button-login" mat-flat-button color="primary">Entrar</button>
           <div class="cadastro-forgot">
             <a class="button-cadastro" mat-button routerLink="/">Não tenho cadastro</a>
             <a class="button-forgot-password" mat-button routerLink="/">Esqueci a senha</a>
