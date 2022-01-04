@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="container">
+    <form class="form mat-elevation-z4">
+        <h1>Spaço Educar</h1>
+        <img src="../../../assets/img/read.svg" alt="Desenho de uma criança lendo um livro">
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput placeholder="E-mail">
+        </mat-form-field>
+    
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="Senha">
+          </mat-form-field>  
+
+          <button class="full-width mat-elevation-z4 button-login" mat-flat-button color="primary">Entrar</button>
+          <div class="cadastro-forgot">
+            <a class="button-cadastro" mat-button routerLink="/">Não tenho cadastro</a>
+            <a class="button-forgot-password" mat-button routerLink="/">Esqueci a senha</a>
+          </div>
+          
+      </form>
+</div>
