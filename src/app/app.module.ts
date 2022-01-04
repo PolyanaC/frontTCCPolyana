@@ -31,6 +31,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ArtigoListComponent } from './components/post/artigo-list/artigo-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ArtigoListComponent } from './components/post/artigo-list/artigo-list.c
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    ArtigoListComponent
+    ArtigoListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
