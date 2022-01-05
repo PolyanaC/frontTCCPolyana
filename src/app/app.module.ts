@@ -34,6 +34,7 @@ import { ArtigoListComponent } from './components/post/artigo-list/artigo-list.c
 import { LoginComponent } from './components/login/login.component';
 //Toastr
 import { ToastrModule } from 'ngx-toastr';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     HeaderComponent,
     ArtigoListComponent,
-    LoginComponent
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

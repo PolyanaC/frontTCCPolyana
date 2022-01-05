@@ -1,0 +1,45 @@
+<div class="container">
+    <form class="form mat-elevation-z4">
+        <h1>Spaço Educar</h1>
+        <p>Inscreva-se e aproveite mais!</p>
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Nome</mat-label>
+            <input 
+            [formControl] = "nome"
+            required
+            [(ngModel)] = "creds.nome"
+            name="nome" 
+            matInput 
+            placeholder="Nome completo">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input 
+          [formControl] = "email"
+          required
+          [(ngModel)] = "creds.email"
+          name="email" 
+          matInput 
+          placeholder="O seu melhor e-mail">
+        </mat-form-field>
+    
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input 
+            [formControl] = "senha"
+            required
+            [(ngModel)] = "creds.senha"
+            name="senha" 
+            type="password" 
+            matInput 
+            placeholder="Sua senha">
+          </mat-form-field>  
+
+          <button (click)="cadastrar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4 button-cadastro" mat-flat-button color="primary">Cadastre-se</button>
+          <div class="cadastro-login">
+            <p>Já tem uma conta? <a class="button-forgot-password" mat-button routerLink="/login">Fazer login</a></p>
+          </div>
+      </form>
+</div>
+
